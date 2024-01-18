@@ -15,14 +15,14 @@ body {
 }
 
 .bg-custom {
-  background-image: url("../public/images/bg-image.png");
+  background-image: url("./images/bg-image.png");
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
 }
 
 .bg-custom-launchpad {
-  background-image: url("../public/images/launchpad-bg.png");
+  background-image: url("./images/launchpad-bg.png");
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
