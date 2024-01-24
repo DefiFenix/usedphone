@@ -150,7 +150,6 @@ function getRandomFoodPosition() {
     x = Math.floor((Math.random() * maxPos) / 10) * 10;
     y = Math.floor((Math.random() * maxPos) / 10) * 10;
   } while (isFoodOnSnake({ x, y }) || isFoodOutsideCanvas({ x, y }));
-  console.log("Food position:", { x, y }); // Add this line
   return { x, y };
 }
 
