@@ -122,7 +122,7 @@ function moveSnake() {
     } while (isFoodOnSnake(food));
 
     // Increase speed after eating food
-    speed = Math.max(20, speed - 5); // Lower limit of 20ms
+    speed = Math.max(20, speed - 2); // Lower limit of 20ms
   } else {
     snake.pop();
   }
@@ -150,6 +150,7 @@ function getRandomFoodPosition() {
     x = Math.floor((Math.random() * maxPos) / 10) * 10;
     y = Math.floor((Math.random() * maxPos) / 10) * 10;
   } while (isFoodOnSnake({ x, y }) || isFoodOutsideCanvas({ x, y }));
+  console.log("Food position:", { x, y }); // Add this line
   return { x, y };
 }
 
