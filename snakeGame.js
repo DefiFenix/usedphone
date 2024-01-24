@@ -27,6 +27,7 @@ function resetGameState() {
   dy = 0;
   food = getRandomFoodPosition();
   score = 0;
+  speed = 100; // Reset speed to initial value
   updateScoreDisplay(); // reset score
   clearCanvas();
   drawFood();
@@ -150,6 +151,7 @@ function getRandomFoodPosition() {
     x = Math.floor((Math.random() * maxPos) / 10) * 10;
     y = Math.floor((Math.random() * maxPos) / 10) * 10;
   } while (isFoodOnSnake({ x, y }) || isFoodOutsideCanvas({ x, y }));
+  console.log("Food spawned at:", { x, y }); // This line logs the food position
   return { x, y };
 }
 

@@ -32,7 +32,7 @@ body {
 }
 
 .bg-custom-launchpad {
-  background-image: url(".images/launchpad-bg.png");
+  background-image: url("./images/launchpad-bg.png");
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
@@ -62,7 +62,7 @@ body {
   /* Ensure it can contain the full width of the canvas */
   max-width: 600px;
   /* Maximum width of the canvas */
-  height: 400px;
+  height: 500px;
   /* Height of the canvas */
   overflow: hidden;
   /* Hide overflow to prevent scrollbars */
