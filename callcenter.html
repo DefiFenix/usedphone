@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>A gently used Nokia 3310</title>
+    <link href="output.css" rel="stylesheet" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700;800;900&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="apple-touch-icon"
+      sizes="76x76"
+      href="./favicon/apple-touch-icon.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./favicon/favicon-32x32.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="16x16"
+      href="./favicon/favicon-16x16.png"
+    />
+    <link rel="manifest" href="./favicon/site.webmanifest" />
+    <meta name="msapplication-TileColor" content="#da532c" />
+    <meta name="theme-color" content="#ffffff" />
+  </head>
+  <body class="bg-black text-white nokia-font">
+    <!-- NAVBAR -->
+    <div class="bg-black h-[100px] flex items-center justify-center">
+      <div
+        class="flex flex-row justify-between mx-auto items-center w-full px-4 md:px-8"
+      >
+        <div class="flex flex-row items-center md:mx-0 gap-2 my-auto">
+          <img
+            src="images/usedphone-logo.jpg"
+            alt="logo"
+            class="h-[50px] md:h-[70px]"
+          />
+          <h1 class="gradient-text text-xl md:text-3xl font-bold">
+            A GENTLY USED NOKIA 3310
+          </h1>
+        </div>
+
+        <div class="hidden sm:flex items-center gap-4">
+          <a
+            href="callcenter.html"
+            class="font-semibold transition hover:text-primary-blue"
+            >Call Center</a
+          >
+          <a
+            href="snake-game.html"
+            class="font-semibold transition hover:text-primary-blue"
+            >Snake Game</a
+          >
+          <a
+            href="https://t.me/USEDPHONE_SOL"
+            target="_blank"
+            class="font-semibold transition hover:text-primary-blue"
+            >Telegram</a
+          >
+          <a
+            href="https://twitter.com/Nokia3310Sol"
+            target="_blank"
+            class="font-semibold transition hover:text-primary-blue"
+            >Twitter</a
+          >
+          <a
+            href="https://jup.ag/swap/SOL-USEDPHONE_E2x5XH8eHkZGiaA8mFicU5CoGUJxSRKiXjEW5Nybf8Nn"
+            class="bg-gradient-custom font-semibold transition hover:text-white rounded-lg px-4 py-2 text-black"
+            target="_blank"
+            >Buy Now</a
+          >
+        </div>
+      </div>
+    </div>
+    <div
+      class="flex flex-col mx-auto items-center w-full lg:max-w-[600px] px-4"
+    >
+      <a
+        href="index.html"
+        class="flex items-center font-semibold transition mr-auto bg-gradient-custom text-transparent bg-clip-text rounded-lg mt-8 mb-4"
+      >
+        <img
+          src="images/arrow-back.svg"
+          alt="Back Arrow"
+          class="inline-block mr-2 h-8"
+        />
+        Go back home
+      </a>
+
+      <img
+        src="images/callcenter-banner.png"
+        alt="logo"
+        class="w-screen md:max-w-[600px] lg:w-[600px] px-4"
+      />
+
+      <p
+        class="mt-16 mb-4 bg-gradient-custom text-transparent bg-clip-text text-xl"
+      >
+        Call Center Address
+      </p>
+      <div
+        class="flex flex-col md:flex-row items-center gap-4 sm:border border-white rounded-lg sm:p-4"
+      >
+        <p
+          id="textToCopy"
+          class="text-xs md:text-sm whitespace-normal md:whitespace-nowrap flex"
+        >
+          AFvsmxNq9maU5daAmxDuvPeJtEpfnMXnSpwrEgcVyen8
+        </p>
+        <button
+          class="text-sm p-2 bg-gradient-custom rounded-lg text-black hover:text-white transition"
+          id="copyButton"
+        >
+          Copy
+        </button>
+      </div>
+
+      <div
+        class="p-12 bg-gradient-custom"
+        id="notification"
+        style="display: none"
+      >
+        <p class="text-xl text-black">RING RING!!!</p>
+        <p class="text-black">Address copied!</p>
+      </div>
+
+      <div class="flex flex-col mt-8 border w-full rounded-lg p-8 gap-8">
+        <p class="text-lg text-center">How it works</p>
+        <div class="flex flex-row gap-4 mr-auto">
+          <img
+            src="images/callcenter-1.png"
+            alt="1"
+            class="h-[50px] w-[50px]"
+          />
+          <div>
+            <p class="mb-2">Copy the address</p>
+            <p class="text-sm text-gray-400">
+              Copy the address and go to your wallet.
+            </p>
+          </div>
+        </div>
+
+        <div class="flex flex-row gap-4 mr-auto">
+          <img
+            src="images/callcenter-2.png"
+            alt="2"
+            class="h-[50px] w-[50px]"
+          />
+          <div>
+            <p class="mb-2">Send $USEDPHONE</p>
+            <p class="text-sm text-gray-400">
+              From your wallet, send $USEDPHONE tokens to the Call Center
+              Address. There is no minimum amount required.
+            </p>
+          </div>
+        </div>
+
+        <div class="flex flex-row gap-4 mr-auto">
+          <img
+            src="images/callcenter-3.png"
+            alt="3"
+            class="h-[50px] w-[50px]"
+          />
+          <div>
+            <p class="mb-2">Automatic distribution</p>
+            <p class="text-sm text-gray-400">
+              "The Call Center will automatically distribute the tokens among
+              random addresses of $USEDCAR hodlers once every 3,310 tokens are
+              received in the Call Center Vault.
+            </p>
+          </div>
+        </div>
+        <div class="flex flex-row gap-4 mr-auto">
+          <img
+            src="images/callcenter-4.png"
+            alt="4"
+            class="h-[50px] w-[50px]"
+          />
+          <div>
+            <p class="mb-2">Deflationary Mechanism</p>
+            <p class="text-sm text-gray-400">
+              9 different addresses receive 331 USEDPHONE tokens and 331 are
+              burned forever 🔥
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="flex flex-col mt-12">
+      <p class="text-center mb-4">Image from the Nokia Call Center</p>
+      <img
+        src="images/call-center.jpg"
+        alt="call center"
+        class="mx-auto w-screen md:w-[600px]"
+      />
+    </div>
+
+    <div class="h-[200px]"></div>
+
+    <script src="script.js"></script>
+  </body>
+</html>
