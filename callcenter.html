@@ -103,9 +103,10 @@
           class="w-screen md:max-w-[600px] lg:w-[600px] px-4"
         />
 
-        <div class="bg-black mt-8 p-2 rounded-lg">
+        <!-- CALL CENTER ADDRESS -->
+        <div class="bg-black mt-8 p-2 rounded-lg w-full">
           <p
-            class="mb-4 bg-gradient-custom text-transparent bg-clip-text text-xl text-center"
+            class="mb-4 bg-gradient-custom text-transparent bg-clip-text text-2xl text-center"
           >
             Call Center Address
           </p>
@@ -114,17 +115,30 @@
           >
             <p
               id="textToCopy"
-              class="text-xs md:text-sm whitespace-normal md:whitespace-nowrap flex"
+              class="text-sm font-sans font-semibold"
             >
               AFvsmxNq9maU5daAmxDuvPeJtEpfnMXnSpwrEgcVyen8
             </p>
             <button
-              class="text-sm p-2 bg-gradient-custom rounded-lg text-black hover:text-white transition"
+              class="text-sm p-2 bg-gradient-custom rounded-lg text-black hover:text-white transition ml-auto w-full"
               id="copyButton"
             >
               Copy
             </button>
           </div>
+          <p class="text-gray-400 text-sm my-4">Only send USEDPHONE to this address!</p>
+          <a
+            class="text-sm mt-2 pb-2 underline flex items-center"
+            target="_blank"
+            href="https://solscan.io/account/AFvsmxNq9maU5daAmxDuvPeJtEpfnMXnSpwrEgcVyen8"
+          >
+            View on Solscan
+            <img
+              src="images/external-link.svg"
+              alt="External Link"
+              class="ml-2 h-4 w-4"
+            />
+          </a>
         </div>
 
         <div
@@ -136,10 +150,66 @@
           <p class="text-black">Address copied!</p>
         </div>
 
+        <!-- TALK TIME TOPUP -->
+        <div class="my-12 p-2 rounded-lg bg-black flex flex-col">
+          <p
+            class="text-xl text-center bg-gradient-custom text-transparent bg-clip-text"
+          >
+            Support Nokia Call Center by Contributing Talk Time
+          </p>
+          <p class="mt-2 text-center text-sm text-gray-400">
+            To ensure the smooth operation of the Nokia Call Center, the
+            underlying smart contract requires gas fees, payable in SOL tokens.
+            These fees enable the automated distribution of USEDPHONE tokens to
+            selected wallets. By topping up the contract, you help maintain its
+            functionality and support the continuous engagement within our
+            community.
+          </p>
+          <p
+            class="mt-6 mb-2 text-center bg-gradient-custom text-transparent bg-clip-text"
+          >
+            Talk Time Address
+          </p>
+          <div
+            class="flex flex-col md:flex-row items-center gap-4 sm:border border-white rounded-lg sm:p-4 bg-black"
+          >
+            <p
+              id="textToCopy2"
+              class="text-xs md:text-sm whitespace-normal md:whitespace-nowrap font-sans font-semibold"
+            >
+              BRqLRWZxfVTi6CxC1s91Aexv5zyTevWTcwQWRwTKEZgB
+            </p>
+            <button
+              class="text-sm p-2 mr-4 bg-gradient-custom rounded-lg text-black hover:text-white transition ml-auto w-full"
+              id="copyButton2"
+            >
+              Copy
+            </button>
+          </div>
+          <p class="text-sm text-gray-400 mt-8">The Talk Time Address requires approximately 0.02 SOL to execute the
+            Call Center token distribution</p>
+            
+          </p>
+          <p class="my-4 text-sm text-gray-400">Only send SOL to this address!</p>
+
+          <a
+            class="text-sm mt-2 pb-2 underline flex items-center"
+            target="_blank"
+            href="https://solscan.io/account/BRqLRWZxfVTi6CxC1s91Aexv5zyTevWTcwQWRwTKEZgB"
+          >
+            View on Solscan
+            <img
+              src="images/external-link.svg"
+              alt="External Link"
+              class="ml-2 h-4 w-4"
+            />
+          </a>
+        </div>
+
         <div
           class="flex flex-col mt-8 border w-full rounded-lg p-8 gap-8 bg-black"
         >
-          <p class="text-lg text-center">How it works</p>
+          <p class="text-lg text-center">How It Works</p>
           <div class="flex flex-row gap-4 mr-auto">
             <img
               src="images/callcenter-1.png"
