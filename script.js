@@ -1,8 +1,7 @@
-// Create an audio element
 var audio = new Audio("nokia_ringtone.mp3");
 
-document.getElementById("copyButton").addEventListener("click", function () {
-  var text = document.getElementById("textToCopy").innerText;
+function copyTextAndShowNotification(textId, notificationId) {
+  var text = document.getElementById(textId).innerText;
   var textarea = document.createElement("textarea");
   textarea.value = text;
   document.body.appendChild(textarea);
@@ -14,7 +13,7 @@ document.getElementById("copyButton").addEventListener("click", function () {
   audio.play();
 
   // Show notification
-  var notification = document.getElementById("notification");
+  var notification = document.getElementById(notificationId);
   notification.style.display = "block";
   notification.style.opacity = "1";
 
@@ -25,4 +24,12 @@ document.getElementById("copyButton").addEventListener("click", function () {
       notification.style.display = "none";
     }, 500); // Wait for the fade out to finish before hiding the element
   }, 3000);
+}
+
+document.getElementById("copyButton").addEventListener("click", function () {
+  copyTextAndShowNotification("textToCopy", "notification");
+});
+
+document.getElementById("copyButton2").addEventListener("click", function () {
+  copyTextAndShowNotification("textToCopy2", "notification");
 });
